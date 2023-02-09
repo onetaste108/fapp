@@ -134,8 +134,7 @@ def parse_model(name):
 	idc = get_links(name)
 	# os.makedirs(dir, exist_ok=True)
 	existed = storage_client.list_blobs(bucket_name, prefix=dir, delimiter='/')
-	# existed = os.listdir(dir)
-	existed = [f.split('.')[0] for f in existed]
+	existed = [f.name.split('/')[-1].split('.')[0] for f in existed]
 	existed = [f[len(f'{name}_'):] for f in existed]
 	existed = [int(f) for f in existed]
 	existed = set(existed)
