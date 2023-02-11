@@ -193,6 +193,7 @@ doc_ref = db.collection(u'clip_server').document(u'request')
 print("Listening..")
 doc_watch = doc_ref.on_snapshot(on_snapshot)
 
+
+import time
 while True:
-	input()
-	exit()
+	time.sleep(1)
