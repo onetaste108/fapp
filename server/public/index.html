@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html {
+        background-color: rgb(255, 255, 255);
+      }
+      #view {
+        display: block;
+        margin: auto;
+      }
+      #inputs {
+        text-align: center;
+        margin: 16px;
+      }
+      #image {
+        display: block;
+        margin: auto;
+      }
+      .button {
+        width: 30%;
+        height: 5vh;
+        padding: 10px;
+      }
+      .textform {
+        width: 100%;
+        height: 5vh;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .imgbox {
+        display: grid;
+        height: 100%;
+        flex: 1 1 auto;
+      }
+      .center-fit {
+        max-width: 100%;
+        max-height: 80vh;
+        margin: auto;
+      }
+      .info {
+        position: relative;
+        display: block;
+        margin: auto;
+        /* font-family: serif; */
+      }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+      <!-- <img id="view" src="nothing.png"><br> -->
+
+      <h1 class="info">FAPP</h1>
+      <div class="imgbox">
+        <img id="image" class="center-fit"></img>
+      </div>
+
+      <div id="inputs">
+        <div class="buttons">
+          <button type="button" class="button" id="uploadButton">Upoad Image</button>
+          <button type="button" class="button" id="likeButton">Like</button>
+        </div>
+        
+        
+        <br>
+        <!-- <form id="textForm" style="display: none;"> -->
+        <form id="textForm">
+          <input type="text" id="textInput" style="padding: 10px">
+            <input type="submit" value="Submit" style="padding: 10px">
+        </form>
+      </div>
+    </div>
+
+    <script type="module">
+
+    </script>
+    <script src="./index.js" type="module"></script>
+  </body>
+
+
+</html>
